@@ -1,6 +1,6 @@
 # CP-Claims
 
-Reproducible simulation study for count-data conformal prediction methods in insurance claim frequency modeling.
+Simulation study for count-data conformal prediction methods in insurance claim frequency modeling.
 
 ## Overview
 
