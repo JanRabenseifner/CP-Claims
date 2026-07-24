@@ -26,12 +26,12 @@ Thumbs.db
 .ipynb_checkpoints/
 
 # Data and outputs
-results/*.parquet
-results/**/*.parquet
-analysis_output/*.csv
-analysis_output/*.tex
-analysis_output/*.json
-analysis_output/*.png
+simulation/results/*.parquet
+simulation/results/**/*.parquet
+simulation/analysis_output/*.csv
+simulation/analysis_output/*.tex
+simulation/analysis_output/*.json
+simulation/analysis_output/*.png
 
 # Logs
 *.log
