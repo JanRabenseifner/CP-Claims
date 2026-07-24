@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cp-claims"
+version = "0.1.0"
+description = "Reproducible count-data conformal prediction simulation study"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "matplotlib>=3.8",
+    "numpy>=1.26",
+    "pandas>=2.2",
+    "pyarrow>=16.0",
+    "scikit-learn>=1.4",
+    "scipy>=1.12",
+    "seaborn>=0.13",
+    "statsmodels>=0.14",
+]
+
+[project.optional-dependencies]
+lightgbm = ["lightgbm>=4.3"]
+hpc = ["mpi4py>=3.1"]
+dev = ["jupyter>=1.0", "ipykernel>=6.0"]
+
+[project.scripts]
+cp-claims-simulate = "cp_claims.cli_simulate:main"
+cp-claims-combine = "cp_claims.cli_combine:main"
+cp-claims-evaluate = "cp_claims.cli_evaluate:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["cp_claims*"]
